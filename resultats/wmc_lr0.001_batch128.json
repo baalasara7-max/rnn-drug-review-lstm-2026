@@ -1,0 +1,46 @@
+{
+  "id": "wmc_lr0.001_batch128",
+  "architecture": "wmc",
+  "learning_rate": 0.001,
+  "batch_size": 128,
+  "parameters": 813507,
+  "arguments": {
+    "epochs": 4,
+    "train_size": 12000,
+    "validation_size": 2000,
+    "test_size": 4000
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "mean_batch_loss": 1.1007518299082493,
+      "validation_accuracy": 0.41499999165534973,
+      "validation_macro_f1": 0.33855390548706055,
+      "seconds": 29.003796500000135
+    },
+    {
+      "epoch": 2,
+      "mean_batch_loss": 1.071974331394155,
+      "validation_accuracy": 0.5389999747276306,
+      "validation_macro_f1": 0.42154788970947266,
+      "seconds": 12.755835099999786
+    },
+    {
+      "epoch": 3,
+      "mean_batch_loss": 0.9986637837075173,
+      "validation_accuracy": 0.6014999747276306,
+      "validation_macro_f1": 0.4476880133152008,
+      "seconds": 11.596452100000079
+    },
+    {
+      "epoch": 4,
+      "mean_batch_loss": 0.9168871089499048,
+      "validation_accuracy": 0.6234999895095825,
+      "validation_macro_f1": 0.49336525797843933,
+      "seconds": 10.936927899999773
+    }
+  ],
+  "complete": true,
+  "best_epoch": 4,
+  "best_validation_macro_f1": 0.49336525797843933
+}

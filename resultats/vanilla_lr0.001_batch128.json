@@ -1,0 +1,46 @@
+{
+  "id": "vanilla_lr0.001_batch128",
+  "architecture": "vanilla",
+  "learning_rate": 0.001,
+  "batch_size": 128,
+  "parameters": 801219,
+  "arguments": {
+    "epochs": 4,
+    "train_size": 12000,
+    "validation_size": 2000,
+    "test_size": 4000
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "mean_batch_loss": 1.099864424543178,
+      "validation_accuracy": 0.382999986410141,
+      "validation_macro_f1": 0.33239439129829407,
+      "seconds": 22.69655950000015
+    },
+    {
+      "epoch": 2,
+      "mean_batch_loss": 1.070308694180022,
+      "validation_accuracy": 0.5199999809265137,
+      "validation_macro_f1": 0.4062780439853668,
+      "seconds": 21.65671190000012
+    },
+    {
+      "epoch": 3,
+      "mean_batch_loss": 0.9986737224649875,
+      "validation_accuracy": 0.5845000147819519,
+      "validation_macro_f1": 0.45594263076782227,
+      "seconds": 21.63586159999977
+    },
+    {
+      "epoch": 4,
+      "mean_batch_loss": 0.9245959368157894,
+      "validation_accuracy": 0.6019999980926514,
+      "validation_macro_f1": 0.481990247964859,
+      "seconds": 12.369269599999825
+    }
+  ],
+  "complete": true,
+  "best_epoch": 4,
+  "best_validation_macro_f1": 0.481990247964859
+}

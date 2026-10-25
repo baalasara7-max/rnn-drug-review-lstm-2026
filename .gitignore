@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.vscode/
+data/*
+!data/vocabulaire.json
+entrainements/
+resultats/*.pt
+resultats/*_experience.tsv
+*.part
+*.zip

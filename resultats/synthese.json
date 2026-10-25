@@ -1,0 +1,552 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cpu",
+    "device": "cpu",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "seed": 42,
+  "arguments": {
+    "epochs": 4,
+    "train_size": 12000,
+    "validation_size": 2000,
+    "test_size": 4000
+  },
+  "counts": {
+    "train": 12000,
+    "validation": 2000,
+    "test": 4000
+  },
+  "class_counts": {
+    "train": {
+      "positif": 7958,
+      "negatif": 2974,
+      "neutre": 1068
+    },
+    "validation": {
+      "positif": 1326,
+      "negatif": 496,
+      "neutre": 178
+    },
+    "test": {
+      "positif": 2656,
+      "negatif": 988,
+      "neutre": 356
+    }
+  },
+  "test_audit": {
+    "raw": 53766,
+    "conflicting_rows": 15,
+    "overlapping_unique_texts_removed": 32108,
+    "eligible": 16153
+  },
+  "sha256": {
+    "drugsComTrain_raw.tsv": "83992773f0f42b20b8c9798767e0f2ce5cf3428c721ee56176d65573d76455e4",
+    "drugsComTest_raw.tsv": "1953e81451b3a43f162e3d438dc1f9c2ee83c9283968a19fce4d3736fdb03eac",
+    "vocabulaire.json": "18ffa327dcaba0bf050c5f2d98fc017d2b4b384939e6f556cf6d1077b8a0059b"
+  },
+  "experiments": [
+    {
+      "id": "vanilla_lr0.001_batch128",
+      "architecture": "vanilla",
+      "learning_rate": 0.001,
+      "batch_size": 128,
+      "parameters": 801219,
+      "arguments": {
+        "epochs": 4,
+        "train_size": 12000,
+        "validation_size": 2000,
+        "test_size": 4000
+      },
+      "epochs": [
+        {
+          "epoch": 1,
+          "mean_batch_loss": 1.099864424543178,
+          "validation_accuracy": 0.382999986410141,
+          "validation_macro_f1": 0.33239439129829407,
+          "seconds": 22.69655950000015
+        },
+        {
+          "epoch": 2,
+          "mean_batch_loss": 1.070308694180022,
+          "validation_accuracy": 0.5199999809265137,
+          "validation_macro_f1": 0.4062780439853668,
+          "seconds": 21.65671190000012
+        },
+        {
+          "epoch": 3,
+          "mean_batch_loss": 0.9986737224649875,
+          "validation_accuracy": 0.5845000147819519,
+          "validation_macro_f1": 0.45594263076782227,
+          "seconds": 21.63586159999977
+        },
+        {
+          "epoch": 4,
+          "mean_batch_loss": 0.9245959368157894,
+          "validation_accuracy": 0.6019999980926514,
+          "validation_macro_f1": 0.481990247964859,
+          "seconds": 12.369269599999825
+        }
+      ],
+      "complete": true,
+      "best_epoch": 4,
+      "best_validation_macro_f1": 0.481990247964859
+    },
+    {
+      "id": "vanilla_lr0.003_batch128",
+      "architecture": "vanilla",
+      "learning_rate": 0.003,
+      "batch_size": 128,
+      "parameters": 801219,
+      "arguments": {
+        "epochs": 4,
+        "train_size": 12000,
+        "validation_size": 2000,
+        "test_size": 4000
+      },
+      "epochs": [
+        {
+          "epoch": 1,
+          "mean_batch_loss": 1.0948076349623659,
+          "validation_accuracy": 0.49900001287460327,
+          "validation_macro_f1": 0.39749225974082947,
+          "seconds": 8.394706300000053
+        },
+        {
+          "epoch": 2,
+          "mean_batch_loss": 1.0035390118335157,
+          "validation_accuracy": 0.5044999718666077,
+          "validation_macro_f1": 0.4202825129032135,
+          "seconds": 7.749037699999917
+        },
+        {
+          "epoch": 3,
+          "mean_batch_loss": 0.8988668183062939,
+          "validation_accuracy": 0.6365000009536743,
+          "validation_macro_f1": 0.49436989426612854,
+          "seconds": 8.0238832
+        },
+        {
+          "epoch": 4,
+          "mean_batch_loss": 0.762749839970406,
+          "validation_accuracy": 0.6284999847412109,
+          "validation_macro_f1": 0.5050165057182312,
+          "seconds": 8.07140419999996
+        }
+      ],
+      "complete": true,
+      "best_epoch": 4,
+      "best_validation_macro_f1": 0.5050165057182312
+    },
+    {
+      "id": "vanilla_lr0.001_batch64",
+      "architecture": "vanilla",
+      "learning_rate": 0.001,
+      "batch_size": 64,
+      "parameters": 801219,
+      "arguments": {
+        "epochs": 4,
+        "train_size": 12000,
+        "validation_size": 2000,
+        "test_size": 4000
+      },
+      "epochs": [
+        {
+          "epoch": 1,
+          "mean_batch_loss": 1.096325159072876,
+          "validation_accuracy": 0.3630000054836273,
+          "validation_macro_f1": 0.3225487172603607,
+          "seconds": 11.909645299999738
+        },
+        {
+          "epoch": 2,
+          "mean_batch_loss": 1.0358970155741305,
+          "validation_accuracy": 0.578499972820282,
+          "validation_macro_f1": 0.4544890820980072,
+          "seconds": 12.048322800000278
+        },
+        {
+          "epoch": 3,
+          "mean_batch_loss": 0.9424458022447343,
+          "validation_accuracy": 0.6340000033378601,
+          "validation_macro_f1": 0.4816899299621582,
+          "seconds": 17.55869930000017
+        },
+        {
+          "epoch": 4,
+          "mean_batch_loss": 0.8561489746925679,
+          "validation_accuracy": 0.5720000267028809,
+          "validation_macro_f1": 0.4784499406814575,
+          "seconds": 20.678054399999837
+        }
+      ],
+      "complete": true,
+      "best_epoch": 3,
+      "best_validation_macro_f1": 0.4816899299621582
+    },
+    {
+      "id": "cifg_lr0.001_batch128",
+      "architecture": "cifg",
+      "learning_rate": 0.001,
+      "batch_size": 128,
+      "parameters": 792963,
+      "arguments": {
+        "epochs": 4,
+        "train_size": 12000,
+        "validation_size": 2000,
+        "test_size": 4000
+      },
+      "epochs": [
+        {
+          "epoch": 1,
+          "mean_batch_loss": 1.101115846887548,
+          "validation_accuracy": 0.4059999883174896,
+          "validation_macro_f1": 0.3316871225833893,
+          "seconds": 19.029797700000017
+        },
+        {
+          "epoch": 2,
+          "mean_batch_loss": 1.0831435005715553,
+          "validation_accuracy": 0.5139999985694885,
+          "validation_macro_f1": 0.3978470265865326,
+          "seconds": 18.372573199999806
+        },
+        {
+          "epoch": 3,
+          "mean_batch_loss": 1.014374281497712,
+          "validation_accuracy": 0.6514999866485596,
+          "validation_macro_f1": 0.46973752975463867,
+          "seconds": 18.151195099999768
+        },
+        {
+          "epoch": 4,
+          "mean_batch_loss": 0.9355921910164204,
+          "validation_accuracy": 0.6044999957084656,
+          "validation_macro_f1": 0.47625160217285156,
+          "seconds": 18.06831740000007
+        }
+      ],
+      "complete": true,
+      "best_epoch": 4,
+      "best_validation_macro_f1": 0.47625160217285156
+    },
+    {
+      "id": "cifg_lr0.003_batch128",
+      "architecture": "cifg",
+      "learning_rate": 0.003,
+      "batch_size": 128,
+      "parameters": 792963,
+      "arguments": {
+        "epochs": 4,
+        "train_size": 12000,
+        "validation_size": 2000,
+        "test_size": 4000
+      },
+      "epochs": [
+        {
+          "epoch": 1,
+          "mean_batch_loss": 1.0999700629964788,
+          "validation_accuracy": 0.47049999237060547,
+          "validation_macro_f1": 0.3750104010105133,
+          "seconds": 18.671227400000134
+        },
+        {
+          "epoch": 2,
+          "mean_batch_loss": 1.025009070305114,
+          "validation_accuracy": 0.6309999823570251,
+          "validation_macro_f1": 0.4774722158908844,
+          "seconds": 18.347327400000268
+        },
+        {
+          "epoch": 3,
+          "mean_batch_loss": 0.9018889018829833,
+          "validation_accuracy": 0.6474999785423279,
+          "validation_macro_f1": 0.5058416724205017,
+          "seconds": 18.115233699999862
+        },
+        {
+          "epoch": 4,
+          "mean_batch_loss": 0.7678191579402761,
+          "validation_accuracy": 0.640500009059906,
+          "validation_macro_f1": 0.5245952010154724,
+          "seconds": 18.36907489999976
+        }
+      ],
+      "complete": true,
+      "best_epoch": 4,
+      "best_validation_macro_f1": 0.5245952010154724
+    },
+    {
+      "id": "cifg_lr0.001_batch64",
+      "architecture": "cifg",
+      "learning_rate": 0.001,
+      "batch_size": 64,
+      "parameters": 792963,
+      "arguments": {
+        "epochs": 4,
+        "train_size": 12000,
+        "validation_size": 2000,
+        "test_size": 4000
+      },
+      "epochs": [
+        {
+          "epoch": 1,
+          "mean_batch_loss": 1.0988737078423196,
+          "validation_accuracy": 0.3400000035762787,
+          "validation_macro_f1": 0.2922489643096924,
+          "seconds": 29.017393099999936
+        },
+        {
+          "epoch": 2,
+          "mean_batch_loss": 1.0581324259017377,
+          "validation_accuracy": 0.5895000100135803,
+          "validation_macro_f1": 0.4505418837070465,
+          "seconds": 29.60035340000013
+        },
+        {
+          "epoch": 3,
+          "mean_batch_loss": 0.9595799639504007,
+          "validation_accuracy": 0.609499990940094,
+          "validation_macro_f1": 0.4795811176300049,
+          "seconds": 22.658801799999765
+        },
+        {
+          "epoch": 4,
+          "mean_batch_loss": 0.8694062806824421,
+          "validation_accuracy": 0.5759999752044678,
+          "validation_macro_f1": 0.48678627610206604,
+          "seconds": 27.857145299999956
+        }
+      ],
+      "complete": true,
+      "best_epoch": 4,
+      "best_validation_macro_f1": 0.48678627610206604
+    },
+    {
+      "id": "wmc_lr0.001_batch128",
+      "architecture": "wmc",
+      "learning_rate": 0.001,
+      "batch_size": 128,
+      "parameters": 813507,
+      "arguments": {
+        "epochs": 4,
+        "train_size": 12000,
+        "validation_size": 2000,
+        "test_size": 4000
+      },
+      "epochs": [
+        {
+          "epoch": 1,
+          "mean_batch_loss": 1.1007518299082493,
+          "validation_accuracy": 0.41499999165534973,
+          "validation_macro_f1": 0.33855390548706055,
+          "seconds": 29.003796500000135
+        },
+        {
+          "epoch": 2,
+          "mean_batch_loss": 1.071974331394155,
+          "validation_accuracy": 0.5389999747276306,
+          "validation_macro_f1": 0.42154788970947266,
+          "seconds": 12.755835099999786
+        },
+        {
+          "epoch": 3,
+          "mean_batch_loss": 0.9986637837075173,
+          "validation_accuracy": 0.6014999747276306,
+          "validation_macro_f1": 0.4476880133152008,
+          "seconds": 11.596452100000079
+        },
+        {
+          "epoch": 4,
+          "mean_batch_loss": 0.9168871089499048,
+          "validation_accuracy": 0.6234999895095825,
+          "validation_macro_f1": 0.49336525797843933,
+          "seconds": 10.936927899999773
+        }
+      ],
+      "complete": true,
+      "best_epoch": 4,
+      "best_validation_macro_f1": 0.49336525797843933
+    },
+    {
+      "id": "wmc_lr0.003_batch128",
+      "architecture": "wmc",
+      "learning_rate": 0.003,
+      "batch_size": 128,
+      "parameters": 813507,
+      "arguments": {
+        "epochs": 4,
+        "train_size": 12000,
+        "validation_size": 2000,
+        "test_size": 4000
+      },
+      "epochs": [
+        {
+          "epoch": 1,
+          "mean_batch_loss": 1.0984455258288282,
+          "validation_accuracy": 0.3610000014305115,
+          "validation_macro_f1": 0.31103143095970154,
+          "seconds": 10.506146900000203
+        },
+        {
+          "epoch": 2,
+          "mean_batch_loss": 1.0235000474655882,
+          "validation_accuracy": 0.48100000619888306,
+          "validation_macro_f1": 0.41079655289649963,
+          "seconds": 10.644711099999768
+        },
+        {
+          "epoch": 3,
+          "mean_batch_loss": 0.8851376290016986,
+          "validation_accuracy": 0.609499990940094,
+          "validation_macro_f1": 0.48180723190307617,
+          "seconds": 10.429889800000183
+        },
+        {
+          "epoch": 4,
+          "mean_batch_loss": 0.7460242547887437,
+          "validation_accuracy": 0.5895000100135803,
+          "validation_macro_f1": 0.48434019088745117,
+          "seconds": 10.820211400000062
+        }
+      ],
+      "complete": true,
+      "best_epoch": 4,
+      "best_validation_macro_f1": 0.48434019088745117
+    },
+    {
+      "id": "wmc_lr0.001_batch64",
+      "architecture": "wmc",
+      "learning_rate": 0.001,
+      "batch_size": 64,
+      "parameters": 813507,
+      "arguments": {
+        "epochs": 4,
+        "train_size": 12000,
+        "validation_size": 2000,
+        "test_size": 4000
+      },
+      "epochs": [
+        {
+          "epoch": 1,
+          "mean_batch_loss": 1.0979704514462898,
+          "validation_accuracy": 0.39149999618530273,
+          "validation_macro_f1": 0.3381284475326538,
+          "seconds": 16.44358680000005
+        },
+        {
+          "epoch": 2,
+          "mean_batch_loss": 1.031513514987966,
+          "validation_accuracy": 0.5625,
+          "validation_macro_f1": 0.44524917006492615,
+          "seconds": 16.60582979999981
+        },
+        {
+          "epoch": 3,
+          "mean_batch_loss": 0.9345831699827885,
+          "validation_accuracy": 0.6514999866485596,
+          "validation_macro_f1": 0.4903590977191925,
+          "seconds": 20.020823900000323
+        },
+        {
+          "epoch": 4,
+          "mean_batch_loss": 0.8407278121151822,
+          "validation_accuracy": 0.5339999794960022,
+          "validation_macro_f1": 0.4595790207386017,
+          "seconds": 43.8453242999999
+        }
+      ],
+      "complete": true,
+      "best_epoch": 3,
+      "best_validation_macro_f1": 0.4903590977191925
+    }
+  ],
+  "final_results": [
+    {
+      "architecture": "vanilla",
+      "learning_rate": 0.003,
+      "batch_size": 128,
+      "parameters": 801219,
+      "best_epoch": 4,
+      "validation_macro_f1": 0.5050165057182312,
+      "test_accuracy": 0.6327499747276306,
+      "test_macro_f1": 0.5052449107170105,
+      "confusion_matrix": [
+        [
+          598,
+          179,
+          211
+        ],
+        [
+          117,
+          96,
+          143
+        ],
+        [
+          345,
+          474,
+          1837
+        ]
+      ]
+    },
+    {
+      "architecture": "cifg",
+      "learning_rate": 0.003,
+      "batch_size": 128,
+      "parameters": 792963,
+      "best_epoch": 4,
+      "validation_macro_f1": 0.5245952010154724,
+      "test_accuracy": 0.6377500295639038,
+      "test_macro_f1": 0.5092604756355286,
+      "confusion_matrix": [
+        [
+          630,
+          175,
+          183
+        ],
+        [
+          128,
+          92,
+          136
+        ],
+        [
+          366,
+          461,
+          1829
+        ]
+      ]
+    },
+    {
+      "architecture": "wmc",
+      "learning_rate": 0.001,
+      "batch_size": 128,
+      "parameters": 813507,
+      "best_epoch": 4,
+      "validation_macro_f1": 0.49336525797843933,
+      "test_accuracy": 0.6274999976158142,
+      "test_macro_f1": 0.4858473241329193,
+      "confusion_matrix": [
+        [
+          607,
+          141,
+          240
+        ],
+        [
+          138,
+          69,
+          149
+        ],
+        [
+          426,
+          396,
+          1834
+        ]
+      ]
+    }
+  ],
+  "majority_baseline": {
+    "class": "positif",
+    "test_accuracy": 0.664,
+    "test_macro_f1": 0.266025641025641
+  }
+}

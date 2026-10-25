@@ -1,0 +1,46 @@
+{
+  "id": "cifg_lr0.001_batch64",
+  "architecture": "cifg",
+  "learning_rate": 0.001,
+  "batch_size": 64,
+  "parameters": 792963,
+  "arguments": {
+    "epochs": 4,
+    "train_size": 12000,
+    "validation_size": 2000,
+    "test_size": 4000
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "mean_batch_loss": 1.0988737078423196,
+      "validation_accuracy": 0.3400000035762787,
+      "validation_macro_f1": 0.2922489643096924,
+      "seconds": 29.017393099999936
+    },
+    {
+      "epoch": 2,
+      "mean_batch_loss": 1.0581324259017377,
+      "validation_accuracy": 0.5895000100135803,
+      "validation_macro_f1": 0.4505418837070465,
+      "seconds": 29.60035340000013
+    },
+    {
+      "epoch": 3,
+      "mean_batch_loss": 0.9595799639504007,
+      "validation_accuracy": 0.609499990940094,
+      "validation_macro_f1": 0.4795811176300049,
+      "seconds": 22.658801799999765
+    },
+    {
+      "epoch": 4,
+      "mean_batch_loss": 0.8694062806824421,
+      "validation_accuracy": 0.5759999752044678,
+      "validation_macro_f1": 0.48678627610206604,
+      "seconds": 27.857145299999956
+    }
+  ],
+  "complete": true,
+  "best_epoch": 4,
+  "best_validation_macro_f1": 0.48678627610206604
+}
