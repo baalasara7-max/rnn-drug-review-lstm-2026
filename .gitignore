@@ -9,3 +9,5 @@ resultats/*.pt
 resultats/*_experience.tsv
 *.part
 *.zip
+
+execution/*.log

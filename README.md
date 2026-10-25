@@ -34,13 +34,23 @@ Original source: [UCI Drugs.com, dataset 462](https://archive.ics.uci.edu/datase
 
 The experiment used [this GitHub TSV mirror](https://github.com/semnan-university-ai/Drug-Review-Dataset) after UCI access problems. Its README mentions Druglib.com, but the selected files are **drugsComTrain_raw.tsv** and **drugsComTest_raw.tsv**, with the seven-column Drugs.com schema. Byte identity with a fresh UCI archive has not been independently verified. The exact file hashes are in `resultats/synthese.json`.
 
-Raw files are not committed. Review the original dataset terms before reuse. Download with:
+Raw files and generated datasets are included in the final ZIP but are not committed to GitHub. Review the original dataset terms before reuse. Download with:
 
 ```powershell
 .\.venv\Scripts\python.exe telecharger_donnees.py
 ```
 
 Alternatively put the two TSV files under `data/` with the names above.
+
+## Run every stage in order
+
+The final ZIP includes the generated datasets, histories and checkpoints. To execute the complete pipeline again, run:
+
+```powershell
+.\.venv\Scripts\python.exe executer_tout.py
+```
+
+The runner executes numbered stages 1-11, including the full educational Vanilla training (stage 8), the controlled comparison (stage 10), the tests and an inference example. Stage 1 receives the training file path to avoid the selection dialog. Each stage writes a log under `execution/`. Previously completed stage-10 experiments may be reused only when their checkpoint and matching settings exist. Installing Python dependencies is still required; virtual environments are never included in the ZIP.
 
 ## Reproduce the final experiment
 
@@ -95,8 +105,10 @@ Stages 6 and 7 are demonstrations, not training. Stage 8 is separate from the fi
 - `resultats/manifeste_splits.json`: ordered hashes and labels of subset texts.
 - `data/vocabulaire.json`: fixed vocabulary and category mapping.
 - `resultats/meilleur_*.pt`: selected checkpoints, in the submission ZIP rather than Git.
-- `resultats/*_experience.tsv`: experimental subsets, in the ZIP rather than Git.
-- `documents/`: five-page report and PowerPoint with English speaker notes.
+- `resultats/*_experience.tsv`: experimental subsets, in the ZIP rather than Git. The ZIP also includes `data/train_nettoye.tsv`, `data/train.tsv` and `data/validation.tsv`.
+- `documents/Rapport_RNN_FINAL_corrige.pdf`: final five-page report supplied by the authors.
+- `documents/Drug_Review_LSTM_Report.pptx`: final PowerPoint supplied by the authors.
+- `execution/bilan_execution.json`: ordered execution record and per-stage logs in the ZIP.
 
 ## Tests
 

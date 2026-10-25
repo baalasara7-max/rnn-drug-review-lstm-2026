@@ -1,0 +1,26 @@
+{
+  "all_stages_successful": true,
+  "stage_count": 13,
+  "configuration_count": 9,
+  "freshly_retrained_configurations": 5,
+  "validated_checkpoints_reused": 4,
+  "report_metrics_reproduced_at_displayed_precision": true,
+  "train_rows": 95443,
+  "validation_rows": 16842,
+  "source_hashes_match_reference": true,
+  "documents": {
+    "report": {
+      "filename": "Rapport_RNN_FINAL_corrige.pdf",
+      "pages": 5,
+      "sha256": "018948a54800a72770d83a8332530667135e0a4f3fe2f799b3a8d5007fd6f597"
+    },
+    "powerpoint": {
+      "filename": "Drug_Review_LSTM_Report.pptx",
+      "slides": 12,
+      "slides_with_notes": 12,
+      "sha256": "cb4501f739a3a38a9ef1822059e93bc33c8b0adeb734f7aa44bba0bcdfc2fdcd"
+    },
+    "copied_without_content_changes": true
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+}

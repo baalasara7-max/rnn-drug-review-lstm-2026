@@ -1,0 +1,119 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "etapes": [
+    {
+      "commande": [
+        "telecharger_donnees.py"
+      ],
+      "code_retour": 0,
+      "secondes": 0.10546459999750368,
+      "journal": "01_telecharger_donnees.log"
+    },
+    {
+      "commande": [
+        "etape_01_explorer.py",
+        "data/drugsComTrain_raw.tsv"
+      ],
+      "code_retour": 0,
+      "secondes": 4.946393899997929,
+      "journal": "02_etape_01_explorer.log"
+    },
+    {
+      "commande": [
+        "etape_02_categories.py",
+        "data/drugsComTrain_raw.tsv"
+      ],
+      "code_retour": 0,
+      "secondes": 1.0747488000051817,
+      "journal": "03_etape_02_categories.log"
+    },
+    {
+      "commande": [
+        "etape_03_nettoyer.py"
+      ],
+      "code_retour": 0,
+      "secondes": 3.729061800004274,
+      "journal": "04_etape_03_nettoyer.log"
+    },
+    {
+      "commande": [
+        "etape_04_separer.py"
+      ],
+      "code_retour": 0,
+      "secondes": 1.4400490999978501,
+      "journal": "05_etape_04_separer.log"
+    },
+    {
+      "commande": [
+        "etape_05_vocabulaire.py"
+      ],
+      "code_retour": 0,
+      "secondes": 2.8412916000015684,
+      "journal": "06_etape_05_vocabulaire.log"
+    },
+    {
+      "commande": [
+        "etape_06_embedding.py"
+      ],
+      "code_retour": 0,
+      "secondes": 28.858662400001776,
+      "journal": "07_etape_06_embedding.log"
+    },
+    {
+      "commande": [
+        "etape_07_modele_vanilla.py"
+      ],
+      "code_retour": 0,
+      "secondes": 1.6204287000000477,
+      "journal": "08_etape_07_modele_vanilla.log"
+    },
+    {
+      "commande": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "code_retour": 0,
+      "secondes": 2.6206861000027857,
+      "journal": "09_tests.log"
+    },
+    {
+      "commande": [
+        "etape_08_entrainer.py"
+      ],
+      "code_retour": 0,
+      "secondes": 383.039431899997,
+      "journal": "10_etape_08_entrainer.log"
+    },
+    {
+      "commande": [
+        "etape_09_variantes.py"
+      ],
+      "code_retour": 0,
+      "secondes": 2.31162310000218,
+      "journal": "11_etape_09_variantes.log"
+    },
+    {
+      "commande": [
+        "etape_10_experiences.py"
+      ],
+      "code_retour": 0,
+      "secondes": 299.2012420000028,
+      "journal": "12_etape_10_experiences.log"
+    },
+    {
+      "commande": [
+        "etape_11_predire.py",
+        "This medicine helped me and I feel better.",
+        "--architecture",
+        "cifg"
+      ],
+      "code_retour": 0,
+      "secondes": 1.530498499996611,
+      "journal": "13_etape_11_predire.log"
+    }
+  ]
+}

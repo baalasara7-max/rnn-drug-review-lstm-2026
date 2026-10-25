@@ -1,0 +1,22 @@
+[
+  {
+    "id": "cifg_lr0.001_batch64",
+    "sha256_checkpoint": "af736bd9e7463a1b4b48ec4e94d8c6de2f1bb59ea2548f407e865447f46f5608",
+    "source": "Previous completed execution with matching code, data, settings and history"
+  },
+  {
+    "id": "wmc_lr0.001_batch128",
+    "sha256_checkpoint": "1b88a8873e372c3abc4a49f4855b2501eda240a43b9e59b7c41b7646c001ce8a",
+    "source": "Previous completed execution with matching code, data, settings and history"
+  },
+  {
+    "id": "wmc_lr0.003_batch128",
+    "sha256_checkpoint": "b6ded1fd25259e0b3915b37e3bd9e7068789f97afa5cbe1cf2c2c821fc01578b",
+    "source": "Previous completed execution with matching code, data, settings and history"
+  },
+  {
+    "id": "wmc_lr0.001_batch64",
+    "sha256_checkpoint": "d880a3e16b5f0b2223e25abf4d706a4b9b318e6e6c88ca18aed10422f7f4934d",
+    "source": "Previous completed execution with matching code, data, settings and history"
+  }
+]
